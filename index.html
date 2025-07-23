@@ -1,1 +1,68 @@
-holder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermine Demael and Stephen Zimmerer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .left-image {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: 75%;
+            height: auto;
+            max-height: calc(100vh - 40px);
+            object-fit: contain;
+            object-position: bottom left;
+        }
+
+        .right-text {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 20%;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: black;
+            background-color: white;
+            padding: 15px;
+            line-height: 1.4;
+        }
+
+        /* Ensure there's space between image and text */
+        @media screen and (max-width: 768px) {
+            .left-image {
+                width: 70%;
+            }
+            
+            .right-text {
+                width: 25%;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="landing/peek-a-boo-landing.jpg" alt="Landing Image" class="left-image">
+    
+    <div class="right-text">
+        Hermine Demael and Stephen Zimmerer are architectural and landscape designers based in New York. Their work addresses the historical contingencies and material realities of building with plants. They teach architecture and media at Syracuse University.
+    </div>
+</body>
+</html>
+Smart, efficient model for everyday use Learn more
+
+Artifacts
