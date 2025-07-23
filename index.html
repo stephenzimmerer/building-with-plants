@@ -10,14 +10,12 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body, html {
             height: 100%;
             font-family: Arial, sans-serif;
             background-color: black;
             overflow: hidden;
         }
-
         .background-image {
             position: absolute;
             top: 0;
@@ -30,7 +28,6 @@
             background-repeat: no-repeat;
             z-index: 1;
         }
-
         .left-text {
             position: absolute;
             top: 20px;
@@ -43,7 +40,22 @@
             z-index: 2;
             background: transparent;
         }
-
+        .email-link {
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-decoration: none;
+            font-style: normal;
+        }
+        .email-link:hover {
+            font-style: italic;
+            text-decoration: underline;
+        }
+        .email-link:visited {
+            color: white;
+            font-style: normal;
+            text-decoration: none;
+        }
         /* Mobile responsive design */
         @media screen and (max-width: 768px) {
             .left-text {
@@ -59,6 +71,8 @@
     <div class="background-image"></div>
     <div class="left-text">
         Hermine Demael and Stephen Zimmerer are architectural and landscape designers based in New York. Their work addresses the historical contingencies and material realities of building with plants. They teach architecture and media at Syracuse University.
-        </div>
+        <br><br>
+        <a href="mailto:hello@demael-zimmerer.com" class="email-link">hello@demael-zimmerer.com</a>
+    </div>
 </body>
 </html>
