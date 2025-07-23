@@ -8,6 +8,7 @@ body, html {
     height: 100%;
     width: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 .background-image {
@@ -41,6 +42,6 @@ body, html {
     .left-text {
         width: 100%;
         right: 20px;
-        padding-right: 40px;
+        padding-right: 20px;
     }
 }
