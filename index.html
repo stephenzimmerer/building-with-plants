@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hermine Demael and Stephen Zimmerer</title>
+    <title>Hermine Demael & Stephen Zimmerer</title>
     <style>
         * {
             margin: 0;
@@ -11,58 +11,43 @@
             box-sizing: border-box;
         }
 
-        body {
-            height: 100vh;
-            width: 100vw;
-            position: relative;
+        body, html {
+            height: 100%;
             overflow: hidden;
         }
 
-        .left-image {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            width: 75%;
-            height: auto;
-            max-height: calc(100vh - 40px);
-            object-fit: contain;
-            object-position: bottom left;
+        #background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('landing/peek-a-boo-landing.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
         }
 
-        .right-text {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 20%;
+        #bio-text {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
             font-family: Arial, sans-serif;
             font-size: 14px;
-            color: black;
-            background-color: white;
-            padding: 15px;
+            color: white;
+            background: transparent;
+            z-index: 1;
             line-height: 1.4;
-        }
-
-        /* Ensure there's space between image and text */
-        @media screen and (max-width: 768px) {
-            .left-image {
-                width: 70%;
-            }
-            
-            .right-text {
-                width: 25%;
-                font-size: 12px;
-            }
         }
     </style>
 </head>
 <body>
-    <img src="landing/peek-a-boo-landing.jpg" alt="Landing Image" class="left-image">
-    
-    <div class="right-text">
+    <div id="background-image"></div>
+    <div id="bio-text">
         Hermine Demael and Stephen Zimmerer are architectural and landscape designers based in New York. Their work addresses the historical contingencies and material realities of building with plants. They teach architecture and media at Syracuse University.
     </div>
 </body>
 </html>
-Smart, efficient model for everyday use Learn more
-
-Artifacts
